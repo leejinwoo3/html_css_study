@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2column-result.html</title>
+    <style>
+        /* 초기화 스타일 */
+        * { 
+            margin: 0;
+            padding: 0;
+    /*content + padding + border 포함한 width, height를 만든다.*/
+
+            box-sizing: border-box;
+        }
+
+        #container { 
+            width: 1200px;
+            margin:20px auto;/*가운데 정령*/
+        }
+
+        #header { 
+            /*부모태그의 너비와 똑같이 준다.->부모태그의 너비를 지정해줘야하 한다.*/
+            width: 100%;
+            height: 120px;
+            background-color: #acacac;
+        }
+        #sidebar {
+            /*sidebar + contents = width는 부모태그의 width보다는 작거나 같아야한다.*/
+            width: 300px;
+            height: 600px;
+            background-color: #e9e9e9;
+            float: left;
+        }
+        #contents { 
+            width: 900px;
+            height: 600px;
+            background-color: #f7f7f7;
+            float: right;
+        }
+        #footer { 
+            width: 100%;
+            height: 100px;
+            background-color: #888;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">  
+            <h1>사이트 제목</h1>
+        </header>
+           
+        <aside id="sidebar">
+            <H2>사이드 바</H2>
+        </aside>
+           
+        <section id="contents">
+            <H2>본문</H2>
+        </section>
+
+        <footer id="footer">
+            <h2>푸터</h2>
+        </footer>
+    </div>
+</body>
+</html>

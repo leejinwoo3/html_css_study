@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper { 
+            display: grid;
+            /* 비율을 지정할때 : fr , 너비가 같은 컬럼3개를 반복 : repeat */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: minmax(100, auto);
+            /* 내용물 맞춰서 진행 : minmax */
+        }
+
+        .items { 
+            padding: 10px;
+            background-color: #eee;
+
+        }
+        /* odd : 홀수, even :짝수 */
+        .items:nth-child(odd) { 
+            background-color: #bbb;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="items"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti est laudantium vel, temporibus excepturi illo ex commodi et nam itaque. Culpa saepe iure repudiandae, suscipit quasi veritatis ullam quas molestias.</div>
+        <div class="items"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti est laudantium vel, temporibus excepturi illo ex commodi et nam itaque. Culpa saepe iure repudiandae.</div>
+        <div class="items"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti est laudantium vel, temporibus excepturi.</div>
+        <div class="items"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti est.</div>
+        <div class="items"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti est laudantium vel, .</div>
+    </div>
+</body>
+</html>

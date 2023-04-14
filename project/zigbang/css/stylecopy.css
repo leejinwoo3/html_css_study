@@ -1,0 +1,460 @@
+@charset "utf-8";
+ /* 초기화 태그 */
+ body { 
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em !important;
+
+ }
+
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.wrap {
+    overflow: hidden;
+    min-width: 1200px;
+    
+}
+
+/* 헤더 */
+
+header {
+    height: 80px; 
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;   /*직방은 특이하게 header의 width가 100%로 입니다.*/
+    border-bottom: 1px solid rgb(193, 193, 193);
+    background-color: white;
+}
+
+.nav__menu >  li {
+    /* relative 뷰포트 기준으로 잡음 */
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    top: 0;
+}
+
+.w1 {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.w2 {
+    display: block;
+    font-size: 13px;
+}
+
+.sub-menu {
+    display: none;
+    width: 200px;
+    margin-top: 300px;
+    background: white;
+    position: absolute;
+    top: 80px;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.nav__menu li:hover .sub-menu {
+    display: block;
+}
+.sub-menu > li { 
+    padding: 10px;
+}
+
+.menu{ 
+    position: relative;
+    width: 100%;
+    height: 460px;
+    margin: 0px auto;
+    display: flex;
+
+    align-items: center;
+    background-size: cover;
+    background-image: url('../images/bg.jpg') ;
+}
+.menu_wrap { 
+    margin: 0 auto;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    background:no-repeat;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+.menu_wrap > div > h2 { 
+    width: 684px;
+    height: 46px;
+    text-shadow: rgb(255, 255, 255) 0px 16px 40px;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0px auto;
+    cursor: default;
+    /* padding-top: 100px; */
+
+}
+ 
+.nav-tabs { 
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(3, 20, 45, 0.85);
+    border-radius: 8px;
+    margin-bottom: 26px;
+    
+    
+}
+.nav-tabs > li {
+    width: 20%;
+   
+}
+.nav-tabs > li > a {
+    font-weight: bold !important;
+    text-align: center;
+    
+}
+.nav-tabs > li:not(:first-child) > a {
+    color: white !important;
+}
+.menu_nav  { 
+  
+    display: flex;
+    flex-direction: column;
+    width: 574px;
+    height: 196px;
+    margin-top: 100px;
+}
+
+#input_box {
+    width: 528px;
+    height: 60px;
+}
+label {
+    margin-bottom: 0px !important;
+}
+.login { 
+   
+
+}
+.login1 { 
+    display: flex;
+    vertical-align: middle;
+    float: right;
+    display: table;
+    height: 80px;
+    margin-left: 450px;
+}
+.login2 {
+    display: inline-block;
+    position: relative;
+    padding-top: 23px;
+
+}
+
+.login3 { 
+    min-width: 106px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgb(238, 238, 238);
+    padding: 5px 8px 6px;
+    
+}
+button{
+        display: inline-block;
+        padding: 0px;
+        height: 24px;
+        font-size: 12px;
+        color: rgb(34, 34, 34);
+        position: relative;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid rgb(225, 225, 225);
+        background: transparent;
+        margin: 10px;
+}
+
+.banner { 
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner1{
+    height: 39px;
+    padding: 21px 21px 20px 13px;
+    margin-left: 15px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.banner1 > img { 
+    display: block;
+     
+}
+
+
+.myclass {
+    margin-top: 10px;
+
+}
+
+ul { 
+   margin-top: 100px;
+}
+
+.meunu_head{ 
+    padding-top: 100px;
+}
+#basic-addon2 > i  { 
+ 
+}
+.myclass > span { 
+    background-color: rgb(255,104,27);
+}
+.myclass > .form-control {
+    height: 60px;
+ }
+
+/* section find start */
+.find {
+    height: 280px;
+}
+#basic-addon2{
+    background-color: orange;
+}
+#basic-addon2 > i { 
+    color: white;
+    
+}
+#basic-addon2:hover { 
+    background-color: rgb(56, 37, 1);
+}
+.find_1 {
+    height: 280px;
+    width: 840px;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px 0px 27px;
+    
+}
+.find_1 > div {
+    width: 33.33%; height: 100%;
+    margin: 0 15px;
+}
+.find_1 > div > div:first-child {
+    height: 40px; width: 100%;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.find_1 > div:not(div:first-child) > div:first-child{
+    display: flex;
+    width: 100%;
+
+}
+.find_1 > div:not(div:first-child) > div:first-child > div:first-child {
+    width: 65%;
+}
+.find_1 > div:not(div:first-child) > div:first-child > div:last-child {
+    width: 35%;
+}
+.find_1 > div:not(div:first-child) > div:first-child > div:last-child > button {
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.find_1 > div:not(div:first-child) > div:first-child > div:last-child > button:hover {
+    background-color: gray;
+}
+
+.find_1 > div > div:last-child {
+    height: 240px; width: 100%;
+
+}
+.find_1 > div:first-child > div:last-child >a >div{
+    background-image: url(../images/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 260px;
+    height: 140px;
+    margin: 20px 0;
+
+}
+.find_1> div:nth-child(2)> div:last-child > div>ul>a> li { 
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+    height: 32px;
+    vertical-align: middle;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.find_1> div> div:last-child > div{
+    margin-top: 20px;
+}
+
+
+.find_1> div:nth-child(3)>div { 
+    font-size: 20px;
+} 
+
+.find_1> div:nth-child(3)> div:last-child > div>ul>a> li { 
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+    height: 32px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.input_box { 
+    width: 508px;
+}
+
+
+/* section find end */
+.app { 
+    background-color: rgba(243,245,245,1.00);
+    height: 279px;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: relative;
+    z-index: 0;
+    
+}
+.app2 { 
+    background: url(../images/phone.png) 109px 0px / contain no-repeat;
+    width: 890px;
+    height: 280px;
+    padding-left: 366px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+.app3 { 
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:40px;
+    margin-left:4px;
+    margin-top:101px
+    
+}
+.app4{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.app5 { 
+    background-image:url(../images/BTN_download_android_nor.png);
+    background-size:contain;
+    cursor:pointer;
+    height:52px;
+    width:190px
+    
+}
+.app6 { 
+    background-image:url(../images/BTN_download_ios_nor.png);
+    background-size:contain;
+    cursor:pointer;
+    height:52px;
+    width:190px
+}
+.last { 
+    flex-shrink: 1;
+    min-height: 298px;
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    color: rgb(153, 153, 153);
+    padding: 52px 0px 20px;
+    position: relative;
+    text-align: center;
+}
+/* 푸터 */
+.last1 { 
+    width: 600px;
+    margin: 0px auto;
+    position: relative;
+}
+.last3{ 
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+ .last3 > a { 
+    color: rgb(0, 0, 0);
+    padding: 0px 4px;
+    font-size: 12px;
+    line-height: 1.3;
+    padding-left: 0px;
+ }   
+
+.last4 { 
+    color: rgb(76, 76, 76);
+    font-size: 12px;
+    line-height: 1.6em;
+    padding: 24px 0px 13px;
+    text-align: center;
+}
+
+ .last5 { 
+    display: inline-block;
+    margin-right: 15px;
+   
+ }
+ .last6 { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+ }
+ 
