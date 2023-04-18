@@ -7,17 +7,39 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="images"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
       const movieURL =
-        "https:api.themoviedb.org/3/movie/popular?api_key=982ae81859ec91d54685c660abf01049&language=ko-KR&page=1&region=ko-KR";
+        "https:api.themoviedb.org/3/movie/popular?api_key=982ae81859ec91d54685c660abf01049&language=ko-KR&page=1&region=KR";
       $.ajax({
         type: "GET",
         url: movieURL,
         dataType: "json",
         async: false,
         success: function (data) {
-          console.log(data);
+          console.log("전체 data", data);
+          const results = data.results;
+          console.log("영화목록", results);
+
+          for (const result of results) {
+            console.log(result);
+            console.log("영화 제목 : ", result.title); //제목
+            console.log("영화 제목 : ", result.overview); //상세 설명
+            console.log("평점 : ", result.vote_average);
+            console.log("포스터 : ", result.poster_path);
+
+            let imgURL = "https://image.tmdb.org/t/p/w500" + result.poster_path;
+
+            $(".images").append(
+              `<a href="./detail.html?id=${result.id}"><img src="${imgURL}"></a>`
+            );
+
+            // $(".images").append(
+            //   '<img src= "https://image.tmdb.org/t/p/w500/mxdVTei65ymzhJlalIEtR1qSgV2.jpg">'
+            // );
+            $(".images").append(`${result.title}`);
+          }
         },
         error: function (request, status, error) {
           console.log("code:" + request.status);
